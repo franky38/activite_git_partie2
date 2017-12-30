@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'gooddogregular';
+    src: url('police/GoodDog-webfont.eot');
+    src: url('police/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/GoodDog-webfont.woff') format('woff'),
+         url('police/GoodDog-webfont.ttf') format('truetype'),
+         url('police/GoodDog-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{ background-image: url("images/fond_tapis.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display : flex; }
+#page2
+{
+   background : linear-gradient( 45deg, #ED189F, red );
+   display : flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center ;
+   margin : 15px;
+}
+#page2 a
+{
+  margin : 30px;
+}
+#deco_laterale  
+{ display :flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background : linear-gradient( 45deg, white, gray );
+  width : 10%;
+  min-height:500px;
+  border : 1px gray solid;   
+  border-radius: 15px ;
+  margin : 10px ;   }
+#deco_laterale p  /* style du texte dans le liseré latéral */
+{
+   font-family: gooddogregular , Arial, serif ;
+   font-size : 5em;
+   color : black;
+   text-shadow: 6px 6px 2px gray; }
+header
+{ width : 90%;
+  height : 20%;
+  display : flex;
+  flex-direction: row ;
+  justify-content: space-around;
+  align-items: center; }  
+#presentation_cv  
+{ display: flex;
+  flex-direction: column;
+  height : 150px;
+  margin-top : 0; }
+#cv_complet
+{ display : flex;
+  flex-direction: column;
+  margin : 10px;
+  height : 80%;
+}
+#detail_cv
+{
+    display : flex;
+    margin-top: 10px ;
+    justify-content: space-between;
+}
+#experience, #competence, #formation
+{
+  margin : 5px;
+  padding: 5px;
+  width : 30%;
+  overflow: auto;
+  min-height:500px;
+  border : 1px black solid;   
+  border-radius: 15px ;
+  background-color: black;
+  color : white;
+  opacity: 0.6;
+}
+h1
+{  font-family: gooddogregular , Arial, serif ;
+   font-size : 3em;
+   color : #ED189F;
+   text-align : center;
+    margin : 0;  }
+
+h2
+{ color : lime;}
+
+.presentation
+{  font-family: gooddogregular , Arial, serif ;
+   font-size : 2em;	
+   color : #ED189F;
+   text-align: center;
+ }
+ #photo1 /* photo de la page principale*/
+ {  
+ 	border : 3px black solid;   
+ 	border-radius: 5px ;
+ 	box-shadow: 6px 6px 2px gray; 
+  position : relative;
+  top : -15px;   }
+
+#photo2  /* photo de la page 2 = photo agrandie */
+{ border : 3px black solid;   
+ 	border-radius: 5px ;
+ 	box-shadow: 6px 6px 2px gray;
+}
+ a,.bouton_retour /* style pour les liens et le lien de retour de la page 2 */
+ {  font-weight: bold;
+    color : white;
+    font-size: 1.2em 
+ }
+a:hover  /* au survol d'un lien il change de couleur*/
+{ background-color: black;
+	color : white;
+  opacity: 0.5;}
